@@ -25,15 +25,23 @@ p, h1, h2, h3, h4 {
 }
 
 /* ---- task1 ----- */
-.block-list { 
-  margin-bottom: 24px;
-  border-radius: 8px;
-  background-color: #f6f6fe;
-  padding: 16px;
-  width: fit-content;
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.cat-subtitle {
+#categories .item {
+  background-color: #f6f6fe;
+  padding: 16px;
+  border-radius: 8px;
+  width: 392px;
+}
+
+#categories .item h2 {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;
@@ -42,25 +50,27 @@ p, h1, h2, h3, h4 {
   margin-bottom: 16px;
 }
 
-.elem-list {
-display: flex;
-flex-direction: column;
-gap: 8px;
+#categories .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
 }
 
-.elem-item {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #2e2f42;
-border: 1px solid #808080;
-border-radius: 4px;
-width: 360px;
-height: 40px;
-display: flex;
-align-items: center;
-padding-left: 16px;
+#categories .item ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
 }
-
 /*------ task2----- */
+
